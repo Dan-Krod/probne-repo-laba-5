@@ -32,20 +32,7 @@ class Room:
             print(f"\nОб*єкт {furniture.name} видалено з кімнати")
         else:
             print(f"\nОб*єкт {furniture.name} не знайдено в кімнаті")
-    
-    # 1 спосіб
-    # def rearrangment(self, furniture_name, new_coordinates)
-    #     for furniture in self.object:
-    #         if furniture.name == furniture_name: 
-    #             if self.check_size(furniture):
-    #                 furniture.coordinates = new_coordinates
-    #                 print(f'Коопдинати змінено ;) . Об*єкт {furniture.name} має координати ')
-    #             else:
-    #                 print('Об*єкт не вміщається в кімнату ((')
-    #         return
-    #     print('Об*єкт не знайдено в кімнаті ((')         
-
-    # 2 спосіб
+            
     def rearrangement(self, object_name, new_coordinates):
         check_furniture = self.find_object(object_name)
         if check_furniture:
