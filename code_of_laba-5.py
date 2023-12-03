@@ -13,7 +13,7 @@ class Room:
         self.size_room = size_room
         self.object = []
     
-    def add_object(self, furniture):
+    def add_furniture_piece(self, furniture_piece):
         if self.check_size(furniture):
             self.object.append(furniture)
             print(f"Об*єкт {furniture.name} додано до кімнати " )
