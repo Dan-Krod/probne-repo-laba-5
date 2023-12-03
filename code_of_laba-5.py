@@ -14,11 +14,11 @@ class Room:
         self.furniture_pieces_in_room = []
     
     def add_furniture_piece(self, furniture_piece):
-        if self.check_size(furniture):
-            self.object.append(furniture)
-            print(f"Об*єкт {furniture.name} додано до кімнати " )
+        if self.check_furniture_size(furniture_piece):
+            self.furniture_pieces_in_room.append(furniture_piece)
+            print(f"Об*єкт {furniture_piece.name} додано до кімнати " )
         else:
-            print(f"Об*єкт {furniture.name} НЕ додано до кімнати, бо не вміщається в кімнату " )
+            print(f"Об*єкт {furniture_piece.name} НЕ додано до кімнати, бо не вміщається в кімнату " )
         
     def check_piece_size(self, furniture_piece):
         x, y = furniture_piece.coordinates
