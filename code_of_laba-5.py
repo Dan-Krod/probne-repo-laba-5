@@ -1,5 +1,5 @@
 class Furniture:
-    def __init__(self, name = "", coordinates =[], size = []):
+    def __init__(self, name="", coordinates=(), size=()):
         self.name = name
         self.coordinates = coordinates
         self.size = size
