@@ -39,7 +39,7 @@ class Room:
             if self.check_furniture_size(check_furniture_presence):
                 check_furniture_presence.coordinates = new_coordinates
             else:
-                print(f"Об*єкт {check_furniture_presence.name} не вміщається в кімнаті в кімнаті")
+                print(f"Об*єкт {check_furniture_presence.name} не вміщається в кімнаті")
         else:
             print(f"Об*єкт {furniture_piece_name} не знайдено в кімнаті")
 
