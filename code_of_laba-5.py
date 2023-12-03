@@ -21,8 +21,8 @@ class Room:
             print(f"Об*єкт {furniture.name} НЕ додано до кімнати, бо не вміщається в кімнату " )
         
     def check_piece_size(self, furniture_piece):
-        x, y = furniture.coordinates
-        width, height = furniture.size
+        x, y = furniture_piece.coordinates
+        width, height = furniture_piece.size
 
         return 0 <= x < self.size_room[0] and 0 <= y < self.size_room[1] and x + width <= self.size_room [0] and y + height <= self.size_room [1]
             
