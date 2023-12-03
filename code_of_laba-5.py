@@ -11,7 +11,7 @@ class Furniture:
 class Room:
     def __init__(self, size_room = []):
         self.size_room = size_room
-        self.object = []
+        self.furniture_pieces_in_room = []
     
     def add_furniture_piece(self, furniture_piece):
         if self.check_size(furniture):
