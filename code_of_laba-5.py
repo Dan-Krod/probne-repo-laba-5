@@ -20,7 +20,7 @@ class Room:
         else:
             print(f"Об*єкт {furniture.name} НЕ додано до кімнати, бо не вміщається в кімнату " )
         
-    def check_size(self, furniture):
+    def check_piece_size(self, furniture_piece):
         x, y = furniture.coordinates
         width, height = furniture.size
 
