@@ -9,7 +9,7 @@ class Furniture:
     
 
 class Room:
-    def __init__(self, size_room = []):
+    def __init__(self, size_room=()):
         self.size_room = size_room
         self.furniture_pieces_in_room = []
         
