@@ -24,7 +24,7 @@ class Room:
         x, y = furniture_piece.coordinates
         width, height = furniture_piece.size
 
-        return 0 <= x < self.size_room[0] and 0 <= y < self.size_room[1] and x + width <= self.size_room [0] and y + height <= self.size_room [1]
+        return 0 <= x < self.size_room[0] and 0 <= y < self.size_room[1] and x + width <= self.size_room[0] and y + height <= self.size_room[1]
             
     def remove_object(self, furniture):
         if furniture in self.object:
