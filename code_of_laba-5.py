@@ -61,7 +61,7 @@ def main():
     
     sofa = Furniture("Диван", (2, 3) , (1, 4))
     wardrobe = Furniture("Шафа-купе", (1, 5) , (2, 3))
-    stelag = Furniture("Стелаж для книжок", [0, 8], [4, 7])
+    stelag = Furniture("Стелаж для книжок", (0, 8) , (4, 7))
 
     room.add_furniture_piece(sofa)
     room.add_furniture_piece(wardrobe)
