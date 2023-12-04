@@ -70,7 +70,7 @@ def main():
     print('\nКімната на початку:')
     room.display_info()
  
-    room.rearrangement_furniture_piece('Шафа-купе', [6,5])
+    room.rearrangement('Шафа-купе', (6,5))
 
     print('\nКімната після перестановки')
     room.display_info()
