@@ -33,7 +33,7 @@ class Room:
         else:
             print(f"\nОб*єкт {furniture_piece.name} не знайдено в кімнаті")
             
-    def rearrangement_furniture_piece(self, furniture_piece_name, new_coordinates):
+    def rearrangement(self, furniture_piece_name, new_coordinates):
         check_furniture_presence = self.find_furniture_piece(furniture_piece_name)
         if check_furniture_presence:
             if self.check_furniture_size(check_furniture_presence):
