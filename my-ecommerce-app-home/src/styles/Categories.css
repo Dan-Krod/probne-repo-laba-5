@@ -1,0 +1,106 @@
+.categories {
+  background-color: #f5f0e8;
+  margin: 0 auto;
+  padding: 60px;
+  text-align: center;
+}
+
+.categories h2 {
+  margin: 0 auto;
+  background-color: #8663516f;
+  font-size: 2.8rem; 
+  color: #4e3b31; 
+  margin-bottom: 40px;
+  font-family: 'Merriweather', serif; 
+  max-width: 80%; 
+}
+
+.category-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  flex-wrap: wrap;
+  max-width: 100%; 
+  margin: 0 auto;
+}
+
+.category-card {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(244, 212, 169, 0.628)); 
+  padding: 30px; 
+  width: 240px; 
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 3px solid #e0e0e0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: #d35400; 
+}
+
+.category-image {
+  width: 80%;
+  max-width: 220px; 
+  height: auto; 
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 5px solid #4e3b31; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.category-card h3 {
+  font-size: 1.5rem; 
+  color: #4e3b31; 
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif; 
+  border-bottom: 2px solid rgba(211, 84, 0, 0.5); 
+  padding-bottom: 10px; 
+}
+
+.category-card p {
+  font-size: 1.1rem; 
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6; 
+}
+
+.category-card ul {
+  background-color: rgba(173, 150, 72, 0.2); 
+  padding: 10px 50px; 
+  border-radius: 10px; 
+  text-align: left;
+  margin-top: 15px; 
+}
+
+.category-card ul li {
+  font-size: 1rem; 
+  color: #4e3b31; 
+  margin-bottom: 5px;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 215, 0, 0.2); 
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.category-card:hover::before {
+  background-color: rgba(255, 215, 0, 0.3); 
+}
+

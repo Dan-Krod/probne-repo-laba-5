@@ -1,0 +1,90 @@
+.header {
+  background: linear-gradient(to right, #4e3b31, #b48b40);
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title {
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.page-title h2 {
+  color: #fffefd;
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+
+.header-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo-img {
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  background: linear-gradient(to right, #f9f4de, #fee38b);
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-search-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+  padding-right: 30px; 
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 30px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff8f0;
+  color: #4e3b31;
+  transition: all 0.3s ease;
+  max-width: 250px;
+  margin: 0 auto;
+  flex-grow: 1; 
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #b48b40;
+  box-shadow: 0 0 8px rgba(180, 139, 64, 0.5);
+}
